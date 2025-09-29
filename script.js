@@ -129,7 +129,7 @@ if (location.pathname.endsWith("select.html")) {
   document.querySelectorAll(".subject").forEach(b =>
     b.addEventListener("click", () => {
       sessionStorage.setItem("govt_selected_sub", b.dataset.sub);
-      location.href = "exam.html";
+      location.href = "select.html";
     })
   );
 
