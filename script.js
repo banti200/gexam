@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     certText.innerHTML = `
       This is proudly presented to <b>${name}</b><br/>
-      for successfully completing the <b>Nayan Govt Exam</b><br/>
+      for successfully completing the <b> Govt preparation Exam</b><br/>
       Subject: <b>${domain.replace(/_/g, " ")}</b> &nbsp; | &nbsp;
       Score: <b>${score}</b> &nbsp; | &nbsp;
       Date: <b>${date}</b>
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
       certificate: "Downloaded"
     };
 
-    fetch("https://script.google.com/macros/s/AKfycbzROEZ8CKmuuMdtmWD7yC2F2VY1PFCVQRybd0vfCR_v_VzEY7VSKRcWkODjLRW8rOqIYA/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbztDQCRpb0z-TaRfPPhJQfGlTWUAd0718pRhNqgQeyzepMtErS30G8Fn8bMK81ryMNRAg/exec", {
   method: "POST",
   body: JSON.stringify(studentData)
 
