@@ -1,1 +1,11 @@
 
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Exam</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="container"><header class="exam-header"><div><h3 id="examTitle">Subject: <span id="domainName"></span></h3>
+<div class="muted small">User: <span id="userName"></span></div></div><div class="text-right"><div>Score: <span id="score">0</span></div>
+<div>Q <span id="qIndex">0</span>/<span id="qTotal">0</span></div></div></header>
+<main class="exam-card"><div id="questionBox" class="question-box"></div><div id="optionsBox" class="options-box"></div>
+<div class="controls"><div class="timer">Time left: <span id="time">40</span>s</div><div class="progress-wrap"><div id="timerBar" class="timer-bar"></div></div>
+<div class="btn-row"><button id="submitBtn" class="btn primary">Submit</button><button id="skipBtn" class="btn warning">Skip</button><button id="endBtn" class="btn danger">End Test</button></div></div>
+<div id="reveal" class="reveal-area" style="display:none"></div></main></div><script src="script.js"></script></body></html>
