@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
       certificate: "Downloaded"
     };
 
-    fetch("https://script.google.com/macros/s/AKfycbztDQCRpb0z-TaRfPPhJQfGlTWUAd0718pRhNqgQeyzepMtErS30G8Fn8bMK81ryMNRAg/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbzROEZ8CKmuuMdtmWD7yC2F2VY1PFCVQRybd0vfCR_v_VzEY7VSKRcWkODjLRW8rOqIYA/exec", {
   method: "POST",
   body: JSON.stringify(studentData)
 
