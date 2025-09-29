@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8'>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Certificate - Nayankumar Borse Exam</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .logo {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .logo img {
+      width: 200px;   /* 🔹 size increase/decrease इथे करायचं */
+      height: 140px;
+    }
+    .cert-footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    .cert-footer img {
+      width: 120px;
+      height: auto;
+    }
+    .sign, .seal {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-center">
+    <div class="card auth-card certificate-box">
+
+      <!-- 🔹 NB text ऐवजी image -->
+      <div class="logo">
+        <img src="https://live.staticflickr.com/65535/54819662733_3fb66f122b_n.jpg" " " alt="Logo">
+      </div>
+
+      <h2>Certificate of Achievement</h2>
+      <p id="certText"></p>
+
+      <div class="cert-footer">
+        <div class="sign">
+          <img src="https://live.staticflickr.com/65535/54812804965_5f5e401927_s.jpg" alt="Signature">
+          <p>Authorized Signature</p>
+        </div>
+        <div class="seal">
+          <img src="https://live.staticflickr.com/65535/54812806000_419afc955c_s.jpg" alt="Seal">
+          <p>Official Seal</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <button id="downloadPdf" class="btn primary">Download PDF</button>
+        <button id="printBtn" class="btn outline">Print</button>
+      </div>
+
+      <div class="powered">Powered by Nayankumar Borse</div>
+    </div>
+  </div>
+
+  <!-- PDF/Print scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+``
+"></script>
+  <script src="script.js"></script>
+</body>
+</html>
