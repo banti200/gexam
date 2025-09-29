@@ -3,9 +3,9 @@ function simpleHash(s){let h=0;for(let i=0;i<s.length;i++){h=(h<<5)-h+s.charCode
 
 
 /* Signup page */
-if(location.pathname.endsWith('signup.html')||location.pathname.endsWith('/')){
-  const f=document.getElementById('signupForm'),toLogin=document.getElementById('tologin'),msg=document.getElementById('signupMsg');
-  f.addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('name').value.trim(),email=document.getElementById('email').value.trim().toLowerCase(),qual=document.getElementById('qual').value.trim(),pass=document.getElementById('password').value;if(!name||!email||!qual||!pass){msg.innerText='Fill all fields';return;}if(getUserObj(email)){msg.innerText='User exists. Please login.';return;}const code=generateAccessCode(),user={name,email,qual,passHash:simpleHash(pass),accessCode:code,history:[]};saveUserObj(user);msg.innerHTML='Signup successful! Your Access Code: <strong style="color:#0b74a6">'+code+'</strong>';const b=document.createElement('button');b.className='btn outline';b.innerText='Copy Code';b.onclick=()=>{navigator.clipboard.writeText(code);b.innerText='Copied';};msg.appendChild(b);});if(toLogin)tologin.addEventListener('click',()=>location.href='login.html');}
+if(location.pathname.endsWith('signpage.html')||location.pathname.endsWith('/')){
+  const f=document.getElementById('signupForm'),toLogin=document.getElementById('toLogin'),msg=document.getElementById('signupMsg');
+  f.addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('name').value.trim(),email=document.getElementById('email').value.trim().toLowerCase(),qual=document.getElementById('qual').value.trim(),pass=document.getElementById('password').value;if(!name||!email||!qual||!pass){msg.innerText='Fill all fields';return;}if(getUserObj(email)){msg.innerText='User exists. Please login.';return;}const code=generateAccessCode(),user={name,email,qual,passHash:simpleHash(pass),accessCode:code,history:[]};saveUserObj(user);msg.innerHTML='Signup successful! Your Access Code: <strong style="color:#0b74a6">'+code+'</strong>';const b=document.createElement('button');b.className='btn outline';b.innerText='Copy Code';b.onclick=()=>{navigator.clipboard.writeText(code);b.innerText='Copied';};msg.appendChild(b);});if(toLogin)toLogin.addEventListener('click',()=>location.href='login.html');}
 
 /* Login page */
 if(location.pathname.endsWith('login.html')){
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     certText.innerHTML = `
       This is proudly presented to <b>${name}</b><br/>
-      for successfully completing the <b> Govt preparation Exam</b><br/>
+      for successfully completing the <b>Nayan Govt Exam</b><br/>
       Subject: <b>${domain.replace(/_/g, " ")}</b> &nbsp; | &nbsp;
       Score: <b>${score}</b> &nbsp; | &nbsp;
       Date: <b>${date}</b>
